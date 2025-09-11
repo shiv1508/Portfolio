@@ -480,6 +480,24 @@ section {
     border-left: 4px solid #28a745;
 }
 
+.experience-actions {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #dee2e6;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-actions .btn {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+}
+
 /* Responsive Experience Section */
 @media (max-width: 968px) {
     .experience-timeline::before {
@@ -537,6 +555,16 @@ section {
     
     .project-item:hover {
         transform: none !important;
+    }
+    
+    .experience-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .experience-actions .btn {
+        max-width: 100%;
+        flex: none;
     }
 }
 
